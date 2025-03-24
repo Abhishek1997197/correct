@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Browsing Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { width: 90%; margin: auto; }
+        .site-box { border: 2px solid #333; padding: 10px; margin: 20px 0; }
+        iframe { width: 100%; height: 500px; border: none; }
+    </style>
+</head>
+<body>
+    <h1>Secure Browsing - No Popups, No New Tabs</h1>
+    <div class="container">
+        <div class="site-box">
+            <h2>Movixo</h2>
+            <iframe id="site1" src="about:blank"></iframe>
+            <button onclick="loadSite('site1', 'https://www.movixo.info/')">Open Site</button>
+        </div>
+        <div class="site-box">
+            <h2>123MoviesTan</h2>
+            <iframe id="site2" src="about:blank"></iframe>
+            <button onclick="loadSite('site2', 'https://123moviestan.com/')">Open Site</button>
+        </div>
+        <div class="site-box">
+            <h2>AndyDay TV</h2>
+            <iframe id="site3" src="about:blank"></iframe>
+            <button onclick="loadSite('site3', 'https://andyday.tv/movie')">Open Site</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
